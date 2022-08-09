@@ -1,0 +1,12 @@
+USE sakila;
+SELECT * FROM film;
+SELECT title, description FROM film;
+SELECT * FROM film WHERE film_id = 10;
+SELECT * FROM film WHERE length = 126;
+SELECT * FROM category ORDER BY name DESC;
+SELECT * FROM category ORDER BY category_id;
+SELECT * FROM category ORDER BY category_id DESC;
+SELECT rental_duration, rental_duration + 5 FROM film;
+SELECT rental_duration, rental_duration + 5 AS tempo_aluguel_promocao FROM film;
+SELECT title, description AS titulo_descricao FROM film;
+SELECT title AS "Título do filme", description AS Descrição FROM FILM;
